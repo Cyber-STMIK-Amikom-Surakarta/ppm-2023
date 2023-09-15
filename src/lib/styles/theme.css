@@ -1,14 +1,11 @@
-@import '@fontsource-variable/manrope';
-@import '@fontsource-variable/jetbrains-mono';
-
 :root {
 	/* --r-background-color: hsl(226 19% 13%); */
 	--r-background-color: #141414;
-	--r-main-font: 'Manrope Variable';
+	--r-main-font: 'Averia Libre';
 	--r-main-font-size: 42px;
 	--r-main-color: hsl(226 19% 98%);
-	--r-heading-font: 'Manrope';
-	--r-code-font: 'JetBrains Mono Variable';
+	--r-heading-font: 'Averia Libre';
+	--r-code-font: 'Fira Code';
 	--r-link-color: hsl(180 100% 50%);
 }
 

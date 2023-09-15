@@ -6,7 +6,7 @@ const config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["Poppins", ...fontFamily.sans],
+				sans: ["Averia Libre", ...fontFamily.sans],
 			}
 		},
 	},
