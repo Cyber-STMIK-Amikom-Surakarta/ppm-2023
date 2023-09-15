@@ -64,7 +64,7 @@
 
 <svelte:window on:hashchange={updateHash} />
 
-<div class="reveal">
+<div class="reveal bg-[url(@assets/Grid.svg)] bg-blend-lighten">
 	<div class="slides">
 		<slot />
 	</div>

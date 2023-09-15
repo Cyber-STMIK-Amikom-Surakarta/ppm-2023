@@ -2,7 +2,8 @@
 @import '@fontsource-variable/jetbrains-mono';
 
 :root {
-	--r-background-color: hsl(226 19% 13%);
+	/* --r-background-color: hsl(226 19% 13%); */
+	--r-background-color: #141414;
 	--r-main-font: 'Manrope Variable';
 	--r-main-font-size: 42px;
 	--r-main-color: hsl(226 19% 98%);

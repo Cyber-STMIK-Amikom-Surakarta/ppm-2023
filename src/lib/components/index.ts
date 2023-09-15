@@ -9,6 +9,7 @@ import Stack from './stack.svelte'
 import Step from './step.svelte'
 import Stretch from './stretch.svelte'
 import Vertical from './vertical.svelte'
+import Layout from './layout.svelte'
 
 export {
 	Code,
@@ -22,4 +23,5 @@ export {
 	Step,
 	Stretch,
 	Vertical,
+	Layout
 }
