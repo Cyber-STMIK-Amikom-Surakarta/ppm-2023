@@ -6,7 +6,7 @@ const config = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["Fira Code", ...fontFamily.sans],
+				sans: ["Poppins", ...fontFamily.sans],
 			}
 		},
 	},
