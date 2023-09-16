@@ -20,7 +20,6 @@
 			"<span class='inline-block leading-[1rem] letter'>$&</span>"
 		)
 		letterNodes = element.querySelectorAll('.letter')
-		console.log(letterNodes)
 	})
 
 	$: {
