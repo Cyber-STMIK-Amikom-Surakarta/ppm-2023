@@ -13,14 +13,20 @@
 
 	import TextPoppingEffect from '../components/TextPoppingEffect.svelte'
 	import TextLineSpawnEffect from '../components/TextLineSpawnEffect.svelte'
+	import TextLineEffect from '../components/TextLineEffect.svelte'
 
 	let animateKaryaTitle = 'NONE'
+	let animateKaryaTitleLine = 'NONE'
 	let animatePortfolioOnline = 'NONE'
 	let animateWebsiteECommerce = 'NONE'
 	let animateWebCyber = 'NONE'
 </script>
 
-<Slide on:in={() => (animateKaryaTitle = 'ANIMATE')} animate>
+<Slide
+	on:in={() => (animateKaryaTitle = 'ANIMATE')}
+	on:out={() => (animateKaryaTitle = 'REVERT')}
+	animate
+>
 	<Layout>
 		<TextPoppingEffect
 			animate={animateKaryaTitle}
@@ -32,15 +38,16 @@
 
 <Slide
 	on:in={() => {
-		animateKaryaTitle = 'ANIMATE'
+		animateKaryaTitleLine = 'ANIMATE'
 		animatePortfolioOnline = 'ANIMATE'
 	}}
 	on:out={() => (animatePortfolioOnline = 'REVERT')}
 	animate
 >
 	<Layout>
-		<TextPoppingEffect
-			animate={animateKaryaTitle}
+		<TextLineEffect
+			animate={animateKaryaTitleLine}
+			delay={1000}
 			text="Karya"
 			class="text-[2rem] font-bold tracking-wider"
 		/>
@@ -59,14 +66,15 @@
 
 <Slide
 	on:in={() => {
-		animateKaryaTitle = 'ANIMATE'
+		animateKaryaTitleLine = 'ANIMATE'
 		animateWebsiteECommerce = 'ANIMATE'
 	}}
 	animate
 >
 	<Layout>
-		<TextPoppingEffect
-			animate={animateKaryaTitle}
+		<TextLineEffect
+			animate={animateKaryaTitleLine}
+			delay={1000}
 			text="Karya"
 			class="text-[2rem] font-bold tracking-wider"
 		/>
@@ -85,7 +93,7 @@
 
 <Slide
 	on:in={() => {
-		animateKaryaTitle = 'ANIMATE'
+		animateKaryaTitleLine = 'ANIMATE'
 		animateWebsiteECommerce = 'ANIMATE'
 	}}
 	on:out={() => {
@@ -94,8 +102,9 @@
 	animate
 >
 	<Layout>
-		<TextPoppingEffect
-			animate={animateKaryaTitle}
+		<TextLineEffect
+			animate={animateKaryaTitleLine}
+			delay={1000}
 			text="Karya"
 			class="text-[2rem] font-bold tracking-wider"
 		/>
@@ -115,14 +124,15 @@
 
 <Slide
 	on:in={() => {
-		animateKaryaTitle = 'ANIMATE'
+		animateKaryaTitleLine = 'ANIMATE'
 		animateWebCyber = 'ANIMATE'
 	}}
 	animate
 >
 	<Layout>
-		<TextPoppingEffect
-			animate={animateKaryaTitle}
+		<TextLineEffect
+			animate={animateKaryaTitleLine}
+			delay={1000}
 			text="Karya"
 			class="text-[2rem] font-bold tracking-wider"
 		/>
@@ -141,14 +151,15 @@
 
 <Slide
 	on:in={() => {
-		animateKaryaTitle = 'ANIMATE'
+		animateKaryaTitleLine = 'ANIMATE'
 		animateWebCyber = 'ANIMATE'
 	}}
 	animate
 >
 	<Layout>
-		<TextPoppingEffect
-			animate={animateKaryaTitle}
+		<TextLineEffect
+			animate={animateKaryaTitleLine}
+			delay={1000}
 			text="Karya"
 			class="text-[2rem] font-bold tracking-wider"
 		/>
@@ -168,18 +179,19 @@
 
 <Slide
 	on:in={() => {
-		animateKaryaTitle = 'ANIMATE'
+		animateKaryaTitleLine = 'ANIMATE'
 		animateWebCyber = 'ANIMATE'
 	}}
 	on:out={() => {
-		animateKaryaTitle = 'REVERT'
+		animateKaryaTitleLine = 'REVERT'
 		animateWebCyber = 'REVERT'
 	}}
 	animate
 >
 	<Layout>
-		<TextPoppingEffect
-			animate={animateKaryaTitle}
+		<TextLineEffect
+			animate={animateKaryaTitleLine}
+			delay={1000}
 			text="Karya"
 			class="text-[2rem] font-bold tracking-wider"
 		/>
