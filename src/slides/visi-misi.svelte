@@ -1,15 +1,29 @@
 <script>
 	import { Slide, Layout, Step } from '@components'
 	import TextLineSpawnEffect from '../components/TextLineSpawnEffect.svelte'
+	import TextPoppingEffect from '../components/TextPoppingEffect.svelte'
 
+	let animateMainTitle = 'NONE'
 	let animateVisiTitle = 'NONE'
 	let animateMisiTitle = 'NONE'
 </script>
 
-<Slide animate>
+<Slide
+	on:in={() => (animateMainTitle = 'ANIMATE')}
+	on:out={() => (animateMainTitle = 'REVERT')}
+	animate
+>
 	<Layout class="gap-2">
-		<h1 class="text-[6rem] tracking-wider">Visi & Misi</h1>
-		<h2 class="text-[4rem] tracking-wide">Cyber Amikom Surakarta</h2>
+		<TextPoppingEffect
+			animate={animateMainTitle}
+			class="text-[6rem] tracking-wider"
+			text="Visi & Misi"
+		/>
+		<TextLineSpawnEffect
+			animate={animateMainTitle}
+			class="text-[4rem] tracking-wide"
+			text="Cyber Amikom Surakarta"
+		/>
 	</Layout>
 </Slide>
 
