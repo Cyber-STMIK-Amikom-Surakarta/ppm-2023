@@ -9,14 +9,20 @@
 	import PertemuanRutin2 from '@assets/kegiatan/pertemuan-rutin-2.webp'
 	import TextPoppingEffect from '../components/TextPoppingEffect.svelte'
 	import TextLineSpawnEffect from '../components/TextLineSpawnEffect.svelte'
+	import TextLineEffect from '../components/TextLineEffect.svelte'
 
 	let animateBenefitTitle = 'NONE'
+	let animateBenefitTitleLine = 'NONE'
 	let animateBahasPR = 'NONE'
 	let animateRelasi = 'NONE'
 	let animatePertemuan = 'NONE'
 </script>
 
-<Slide on:in={() => (animateBenefitTitle = 'ANIMATE')} animate>
+<Slide
+	on:in={() => (animateBenefitTitle = 'ANIMATE')}
+	on:out={() => (animateBenefitTitle = 'REVERT')}
+	animate
+>
 	<Layout>
 		<TextPoppingEffect
 			animate={animateBenefitTitle}
@@ -28,7 +34,7 @@
 
 <Slide
 	on:in={() => {
-		animateBenefitTitle = 'ANIMATE'
+		animateBenefitTitleLine = 'ANIMATE'
 		animateBahasPR = 'ANIMATE'
 	}}
 	on:out={() => {
@@ -37,8 +43,9 @@
 	animate
 >
 	<Layout>
-		<TextPoppingEffect
-			animate={animateBenefitTitle}
+		<TextLineEffect
+			animate={animateBenefitTitleLine}
+			delay={1000}
 			class="text-[2rem] font-bold tracking-wider"
 			text="Benefit"
 		/>
@@ -55,14 +62,15 @@
 
 <Slide
 	on:in={() => {
-		animateBenefitTitle = 'ANIMATE'
+		animateBenefitTitleLine = 'ANIMATE'
 		animateRelasi = 'ANIMATE'
 	}}
 	animate
 >
 	<Layout>
-		<TextPoppingEffect
-			animate={animateBenefitTitle}
+		<TextLineEffect
+			animate={animateBenefitTitleLine}
+			delay={1000}
 			class="text-[2rem] font-bold tracking-wider"
 			text="Benefit"
 		/>
@@ -80,15 +88,16 @@
 
 <Slide
 	on:in={() => {
-		animateBenefitTitle = 'ANIMATE'
+		animateBenefitTitleLine = 'ANIMATE'
 		animateRelasi = 'ANIMATE'
 	}}
 	on:out={() => (animateRelasi = 'REVERT')}
 	animate
 >
 	<Layout>
-		<TextPoppingEffect
-			animate={animateBenefitTitle}
+		<TextLineEffect
+			animate={animateBenefitTitleLine}
+			delay={1000}
 			class="text-[2rem] font-bold tracking-wider"
 			text="Benefit"
 		/>
@@ -107,7 +116,7 @@
 
 <Slide
 	on:in={() => {
-		animateBenefitTitle = 'ANIMATE'
+		animateBenefitTitleLine = 'ANIMATE'
 		animatePertemuan = 'ANIMATE'
 	}}
 	on:out={() => {
@@ -117,8 +126,9 @@
 	animate
 >
 	<Layout>
-		<TextPoppingEffect
-			animate={animateBenefitTitle}
+		<TextLineEffect
+			animate={animateBenefitTitleLine}
+			delay={1000}
 			class="text-[2rem] font-bold tracking-wider"
 			text="Benefit"
 		/>
@@ -138,18 +148,19 @@
 
 <Slide
 	on:in={() => {
-		animateBenefitTitle = 'ANIMATE'
+		animateBenefitTitleLine = 'ANIMATE'
 		animatePertemuan = 'ANIMATE'
 	}}
 	on:out={() => {
-		animateBenefitTitle = 'REVERT'
+		animateBenefitTitleLine = 'REVERT'
 		animatePertemuan = 'REVERT'
 	}}
 	animate
 >
 	<Layout>
-		<TextPoppingEffect
-			animate={animateBenefitTitle}
+		<TextLineEffect
+			animate={animateBenefitTitleLine}
+			delay={1000}
 			class="text-[2rem] font-bold tracking-wider"
 			text="Benefit"
 		/>
