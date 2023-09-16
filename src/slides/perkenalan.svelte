@@ -2,7 +2,7 @@
 	import { Slide, Layout } from '@components'
 
 	import TextEffectSlow from '../components/TextEffectSlow.svelte'
-	import TextOpenWithLineEffect from '../components/TextOpenWithLineEffect.svelte'
+	import TextSlowAppearEffect from '../components/TextSlowAppearEffect.svelte'
 
 	import Logo from '@assets/logo.webp'
 
@@ -32,7 +32,7 @@
 	animate
 >
 	<Layout>
-		<TextOpenWithLineEffect
+		<TextSlowAppearEffect
 			animate={animateDesc}
 			class="tracking-widest leading-loose text-5xl text-left"
 			text="UKM Cyber adalah sebuah Unit Kegiatan Mahasiswa STMIK Amikom Surakara yang
