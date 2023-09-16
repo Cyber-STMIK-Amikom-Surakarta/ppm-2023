@@ -15,6 +15,10 @@
 }
 
 .reveal-viewport {
+	/* background: url("@assets/background.webp"), url("@assets/Grid.svg"), var(--r-background-color); */
+	/* background-size: cover, auto, auto; */
+	/* background-position: center, auto, auto; */
+	/* background-blend-mode: soft-light, difference; */
 	background-color: var(--r-background-color);
 }
 

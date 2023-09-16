@@ -64,7 +64,11 @@
 
 <svelte:window on:hashchange={updateHash} />
 
-<div class="reveal bg-[url(@assets/Grid.svg)] bg-blend-lighten">
+<div class="reveal">
+	<div
+		class="absolute w-screen h-screen bg-[url(@assets/background.webp)] bg-cover brightness-[0.1] blur-sm"
+	></div>
+	<div class="absolute w-screen h-screen bg-[url(@assets/Grid-2.svg)]"></div>
 	<div class="slides">
 		<slot />
 	</div>
