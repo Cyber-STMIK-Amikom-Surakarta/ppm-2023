@@ -4,6 +4,7 @@ import BenefitSlide from "./benefit.svelte"
 import ProkerSlide from "./proker.svelte"
 import KaryaSlide from "./karya.svelte"
 import TambahanSlide from "./tambahan.svelte"
+import PenutupSlide from "./penutup.svelte"
 
 export {
 	PerkenalanSlide,
@@ -12,4 +13,5 @@ export {
 	ProkerSlide,
 	KaryaSlide,
 	TambahanSlide,
+	PenutupSlide
 }

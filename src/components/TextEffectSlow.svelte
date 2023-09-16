@@ -7,7 +7,8 @@
 	export let text = ''
 
 	export let loop = false
-	export let duration = 1000
+	export let duration = 500
+	export let delay = 50
 
 	let element = null
 
@@ -25,13 +26,12 @@
 				opacity: [0, 1],
 				easing: 'easeInOutQuad',
 				duration: duration,
-				delay: (el, i) => 150 * (i + 1),
+				delay: (el, i) => delay * (i + 1),
 			})
 		} else if (animate == 'REVERT') {
 			anime.timeline().add({
 				targets: element.querySelectorAll('.letter'),
 				opacity: 0,
-				duration: 1000,
 				easing: 'easeOutExpo',
 			})
 		}

@@ -17,6 +17,7 @@
 		ProkerSlide,
 		KaryaSlide,
 		TambahanSlide,
+		PenutupSlide,
 	} from './slides'
 
 	new Blobity({
@@ -53,10 +54,6 @@
 	</Vertical>
 
 	<Vertical>
-		<Slide>
-			<Layout>
-				<h1 class="text-[6rem] font-bold tracking-wider">Fin</h1>
-			</Layout>
-		</Slide>
+		<PenutupSlide />
 	</Vertical>
 </Presentation>
