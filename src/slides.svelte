@@ -11,6 +11,7 @@
 	} from '@components'
 
 	import {
+		WaitingSlide,
 		PerkenalanSlide,
 		VisiMisiSlide,
 		BenefitSlide,
@@ -29,6 +30,8 @@
 </script>
 
 <Presentation>
+	<WaitingSlide />
+
 	<Vertical>
 		<PerkenalanSlide />
 	</Vertical>
