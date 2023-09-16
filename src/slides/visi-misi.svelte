@@ -2,6 +2,7 @@
 	import { Slide, Layout, Step } from '@components'
 	import TextLineSpawnEffect from '../components/TextLineSpawnEffect.svelte'
 	import TextPoppingEffect from '../components/TextPoppingEffect.svelte'
+	import TextSlowAppearEffect from '../components/TextSlowAppearEffect.svelte'
 
 	let animateMainTitle = 'NONE'
 	let animateVisiTitle = 'NONE'
@@ -48,10 +49,14 @@
 			class="text-[6rem] font-bold tracking-wider"
 			text="Visi"
 		/>
-		<p class="text-6xl tracking-wider leading-relaxed">
-			Menjadi organisasi mahasiswa dibidang sistem informasi yang bermanfaat
-			bagi diri sendiri, instansi dan masyarakat
-		</p>
+		<TextSlowAppearEffect
+			animate={animateVisiTitle}
+			duration={700}
+			delay={300}
+			text="Menjadi organisasi mahasiswa dibidang sistem informasi yang bermanfaat
+			bagi diri sendiri, instansi dan masyarakat"
+			customClass="text-6xl tracking-wider leading-relaxed"
+		/>
 	</Layout>
 </Slide>
 
