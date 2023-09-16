@@ -77,19 +77,19 @@
 			text="Misi"
 		/>
 		<ul class="flex flex-col gap-2 list-decimal text-left">
-			<Step>
+			<Step fadeRight>
 				<li>
 					Menyelenggarakan pelatihan dan pembinaan dalam bidang sistem
 					informasi.
 				</li>
 			</Step>
-			<Step>
+			<Step fadeLeft>
 				<li>
 					Mewujudkan generasi muda yang peduli, madiri, kreatif dan inovatif
 					melalui pemberdayaan masyarakat.
 				</li>
 			</Step>
-			<Step>
+			<Step fadeRight>
 				<li>
 					Sebagai suatu wadah pembekalan dan persiapan untuk mengikuti
 					kompetisi-kompetisi berskala regional, nasional maupun internasional.
