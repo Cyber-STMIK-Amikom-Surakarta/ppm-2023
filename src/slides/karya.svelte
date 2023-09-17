@@ -1,9 +1,9 @@
 <script>
 	import { Slide, Layout, Image, Stack } from '@components'
 
-	// import OnlinePortfolio1 from '@assets/karya/online-portfolio-1.webp'
-	// import OnlinePortfolio2 from '@assets/karya/online-portfolio-2.webp'
 	import OnlinePortfolio1Gif from '@assets/karya/online-portfolio-1.gif'
+	import Fessup1 from "@assets/karya/fessup-1.webp"; 
+	import Fessup2 from "@assets/karya/fessup-2.webp"; 
 
 	import Schmhotel1 from '@assets/karya/schmhotel-1.webp'
 	import Schmhotel2 from '@assets/karya/schmhotel-2.webp'
@@ -16,6 +16,7 @@
 
 	let animateKaryaTitle = 'NONE'
 	let animatePortfolioOnline = 'NONE'
+	let animateFessup = "NONE"
 	let animateWebsiteECommerce = 'NONE'
 	let animateWebCyber = 'NONE'
 </script>
@@ -50,6 +51,48 @@
 		<a href="https://unknownrori.vercel.app">
 			<Stack>
 				<Image src={OnlinePortfolio1Gif} alt="Portofolio Online" />
+			</Stack>
+		</a>
+	</Layout>
+</Slide>
+
+<Slide
+	on:in={() => {
+		animateFessup = 'ANIMATE'
+	}}
+	animate
+>
+	<Layout>
+		<TextLineSpawnEffect
+			animate={animateFessup}
+			text="Fessup"
+			class="text-6xl"
+		/>
+		<a href="https://unknownrori.vercel.app">
+			<Stack>
+				<Image src={Fessup1} alt="Fessup" />
+			</Stack>
+		</a>
+	</Layout>
+</Slide>
+
+<Slide
+	on:in={() => {
+		animateFessup = 'ANIMATE'
+	}}
+	on:out={() =>(animateFessup = 'REVERT')}
+	animate
+>
+	<Layout>
+		<TextLineSpawnEffect
+			animate={animateFessup}
+			text="Fessup"
+			class="text-6xl"
+		/>
+		<a href="https://unknownrori.vercel.app">
+			<Stack>
+				<Image src={Fessup1} alt="Fessup" />
+				<Image src={Fessup2} alt="Fessup" />
 			</Stack>
 		</a>
 	</Layout>
