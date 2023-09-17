@@ -61,7 +61,7 @@
 	animate
 >
 	<Layout>
-		<div data-id="line" class="h-[0.25rem] w-[90vw] bg-white"></div>
+		<div data-id="line" class="h-[0.25rem] w-[960px] bg-white"></div>
 		<TextSlowAppearEffect
 			animate={animateDesc}
 			class="tracking-widest leading-loose text-5xl text-left"
