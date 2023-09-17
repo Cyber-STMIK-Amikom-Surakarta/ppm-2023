@@ -13,7 +13,6 @@
 	import {
 		WaitingSlide,
 		PerkenalanSlide,
-		VisiMisiSlide,
 		BenefitSlide,
 		ProkerSlide,
 		KaryaSlide,
@@ -34,10 +33,6 @@
 
 	<Vertical>
 		<PerkenalanSlide />
-	</Vertical>
-
-	<Vertical>
-		<VisiMisiSlide />
 	</Vertical>
 
 	<Vertical>
