@@ -1,7 +1,7 @@
 :root {
 	/* --r-background-color: hsl(226 19% 13%); */
 	--r-background-color: #141414;
-	--r-main-font: 'Averia Libre';
+	--r-main-font: 'Public Sans';
 	--r-main-font-size: 42px;
 	--r-main-color: hsl(226 19% 98%);
 	--r-heading-font: 'Averia Libre';
@@ -26,7 +26,7 @@
 	color: var(--r-main-color);
 	font-family: var(--r-main-font);
 	font-size: var(--r-main-font-size);
-	font-weight: bold;
+	font-weight: 600;
 }
 
 .reveal pre {
