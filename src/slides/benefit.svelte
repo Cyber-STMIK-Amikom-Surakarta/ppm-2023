@@ -38,99 +38,77 @@
 		animateBahasPR = 'ANIMATE'
 	}}
 	on:out={() => {
+		animateBenefitTitleLine = 'REVERT'
 		animateBahasPR = 'REVERT'
 	}}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateBenefitTitleLine}
-			delay={1000}
-			class="text-[2rem] font-bold tracking-wider"
-			text="Benefit"
-		/>
-		<Stack>
-			<Image src={Makrab1} alt="Makrab 1" />
-		</Stack>
 		<TextLineSpawnEffect
 			animate={animateBahasPR}
 			class="text-6xl"
 			text="Bahas PR"
 		/>
+		<Stack>
+			<Image src={Makrab1} alt="Makrab 1" />
+		</Stack>
 	</Layout>
 </Slide>
 
 <Slide
 	on:in={() => {
-		animateBenefitTitleLine = 'ANIMATE'
 		animateRelasi = 'ANIMATE'
 	}}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateBenefitTitleLine}
-			delay={1000}
-			class="text-[2rem] font-bold tracking-wider"
-			text="Benefit"
-		/>
-		<Stack>
-			<Image src={Makrab1} alt="Makrab 1" />
-			<Image src={Makrab2} alt="Makrab 2" />
-		</Stack>
 		<TextLineSpawnEffect
 			animate={animateRelasi}
 			class="text-6xl"
 			text="Menambah Relasi"
 		/>
+		<Stack>
+			<Image src={Makrab1} alt="Makrab 1" />
+			<Image src={Makrab2} alt="Makrab 2" />
+		</Stack>
 	</Layout>
 </Slide>
 
 <Slide
 	on:in={() => {
-		animateBenefitTitleLine = 'ANIMATE'
 		animateRelasi = 'ANIMATE'
 	}}
 	on:out={() => (animateRelasi = 'REVERT')}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateBenefitTitleLine}
-			delay={1000}
-			class="text-[2rem] font-bold tracking-wider"
-			text="Benefit"
+		<TextLineSpawnEffect
+			animate={animateRelasi}
+			class="text-6xl"
+			text="Menambah Relasi"
 		/>
 		<Stack>
 			<Image src={Makrab1} alt="Makrab 1" />
 			<Image src={Makrab2} alt="Makrab 2" />
 			<Image src={Makrab3} alt="Makrab 3" />
 		</Stack>
-		<TextLineSpawnEffect
-			animate={animateRelasi}
-			class="text-6xl"
-			text="Menambah Relasi"
-		/>
 	</Layout>
 </Slide>
 
 <Slide
 	on:in={() => {
-		animateBenefitTitleLine = 'ANIMATE'
 		animatePertemuan = 'ANIMATE'
 	}}
 	on:out={() => {
-		animateBenefitTitle = 'REVERT'
 		animatePertemuan = 'REVERT'
 	}}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateBenefitTitleLine}
-			delay={1000}
-			class="text-[2rem] font-bold tracking-wider"
-			text="Benefit"
+		<TextLineSpawnEffect
+			animate={animatePertemuan}
+			class="text-6xl"
+			text="Pertemuan Rutin"
 		/>
 		<Stack>
 			<Image src={Makrab1} alt="Makrab 1" />
@@ -138,11 +116,6 @@
 			<Image src={Makrab3} alt="Makrab 3" />
 			<Image src={PertemuanRutin1} alt="Pertemuan Rutin 1" />
 		</Stack>
-		<TextLineSpawnEffect
-			animate={animatePertemuan}
-			class="text-6xl"
-			text="Pertemuan Rutin"
-		/>
 	</Layout>
 </Slide>
 
@@ -158,11 +131,10 @@
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateBenefitTitleLine}
-			delay={1000}
-			class="text-[2rem] font-bold tracking-wider"
-			text="Benefit"
+		<TextLineSpawnEffect
+			animate={animatePertemuan}
+			class="text-6xl"
+			text="Pertemuan Rutin"
 		/>
 		<Stack>
 			<Image src={Makrab1} alt="Makrab 1" />
@@ -171,10 +143,5 @@
 			<Image src={PertemuanRutin1} alt="Pertemuan Rutin 1" />
 			<Image src={PertemuanRutin2} alt="Pertemuan Rutin 2" />
 		</Stack>
-		<TextLineSpawnEffect
-			animate={animatePertemuan}
-			class="text-6xl"
-			text="Pertemuan Rutin"
-		/>
 	</Layout>
 </Slide>

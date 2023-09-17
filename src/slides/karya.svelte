@@ -38,62 +38,47 @@
 
 <Slide
 	on:in={() => {
-		animateKaryaTitleLine = 'ANIMATE'
 		animatePortfolioOnline = 'ANIMATE'
 	}}
 	on:out={() => (animatePortfolioOnline = 'REVERT')}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateKaryaTitleLine}
-			delay={1000}
-			text="Karya"
-			class="text-[2rem] font-bold tracking-wider"
+		<TextLineSpawnEffect
+			animate={animatePortfolioOnline}
+			text="Portfolio Online"
+			class="text-6xl"
 		/>
 		<a href="https://unknownrori.vercel.app">
 			<Stack>
 				<Image src={OnlinePortfolio1Gif} alt="Portofolio Online" />
 			</Stack>
 		</a>
-		<TextLineSpawnEffect
-			animate={animatePortfolioOnline}
-			text="Portfolio Online"
-			class="text-6xl"
-		/>
 	</Layout>
 </Slide>
 
 <Slide
 	on:in={() => {
-		animateKaryaTitleLine = 'ANIMATE'
 		animateWebsiteECommerce = 'ANIMATE'
 	}}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateKaryaTitleLine}
-			delay={1000}
-			text="Karya"
-			class="text-[2rem] font-bold tracking-wider"
+		<TextLineSpawnEffect
+			animate={animateWebsiteECommerce}
+			text="Website E-Commerce"
+			class="text-6xl"
 		/>
 		<a href="https://github.com/UnknownRori/reservation-room-app">
 			<Stack>
 				<Image src={Schmhotel1} alt="Website E-Commerce" />
 			</Stack>
 		</a>
-		<TextLineSpawnEffect
-			animate={animateWebsiteECommerce}
-			text="Website E-Commerce"
-			class="text-6xl"
-		/>
 	</Layout>
 </Slide>
 
 <Slide
 	on:in={() => {
-		animateKaryaTitleLine = 'ANIMATE'
 		animateWebsiteECommerce = 'ANIMATE'
 	}}
 	on:out={() => {
@@ -102,11 +87,10 @@
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateKaryaTitleLine}
-			delay={1000}
-			text="Karya"
-			class="text-[2rem] font-bold tracking-wider"
+		<TextLineSpawnEffect
+			animate={animateWebsiteECommerce}
+			text="Website E-Commerce"
+			class="text-6xl"
 		/>
 		<a href="https://github.com/UnknownRori/reservation-room-app">
 			<Stack>
@@ -114,54 +98,40 @@
 				<Image src={Schmhotel2} alt="Website E-Commerce" />
 			</Stack>
 		</a>
-		<TextLineSpawnEffect
-			animate={animateWebsiteECommerce}
-			text="Website E-Commerce"
-			class="text-6xl"
-		/>
 	</Layout>
 </Slide>
 
 <Slide
 	on:in={() => {
-		animateKaryaTitleLine = 'ANIMATE'
 		animateWebCyber = 'ANIMATE'
 	}}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateKaryaTitleLine}
-			delay={1000}
-			text="Karya"
-			class="text-[2rem] font-bold tracking-wider"
+		<TextLineSpawnEffect
+			animate={animateWebCyber}
+			text="Web Cyber"
+			class="text-6xl"
 		/>
 		<a href="https://cyberamikomsolo.netlify.app/">
 			<Stack>
 				<Image src={CyberWeb1} alt="Website Cyber" />
 			</Stack>
 		</a>
-		<TextLineSpawnEffect
-			animate={animateWebCyber}
-			text="Web Cyber"
-			class="text-6xl"
-		/>
 	</Layout>
 </Slide>
 
 <Slide
 	on:in={() => {
-		animateKaryaTitleLine = 'ANIMATE'
 		animateWebCyber = 'ANIMATE'
 	}}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateKaryaTitleLine}
-			delay={1000}
-			text="Karya"
-			class="text-[2rem] font-bold tracking-wider"
+		<TextLineSpawnEffect
+			animate={animateWebCyber}
+			text="Web Cyber"
+			class="text-6xl"
 		/>
 		<a href="https://cyberamikomsolo.netlify.app/">
 			<Stack>
@@ -169,31 +139,23 @@
 				<Image src={CyberWeb2} alt="Website Cyber" />
 			</Stack>
 		</a>
-		<TextLineSpawnEffect
-			animate={animateWebCyber}
-			text="Web Cyber"
-			class="text-6xl"
-		/>
 	</Layout>
 </Slide>
 
 <Slide
 	on:in={() => {
-		animateKaryaTitleLine = 'ANIMATE'
 		animateWebCyber = 'ANIMATE'
 	}}
 	on:out={() => {
-		animateKaryaTitleLine = 'REVERT'
 		animateWebCyber = 'REVERT'
 	}}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateKaryaTitleLine}
-			delay={1000}
-			text="Karya"
-			class="text-[2rem] font-bold tracking-wider"
+		<TextLineSpawnEffect
+			animate={animateWebCyber}
+			text="Web Cyber"
+			class="text-6xl"
 		/>
 		<a href="https://cyberamikomsolo.netlify.app/">
 			<Stack>
@@ -202,10 +164,5 @@
 				<Image src={CyberWeb3} alt="Website Cyber" />
 			</Stack>
 		</a>
-		<TextLineSpawnEffect
-			animate={animateWebCyber}
-			text="Web Cyber"
-			class="text-6xl"
-		/>
 	</Layout>
 </Slide>

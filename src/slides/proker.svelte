@@ -24,7 +24,9 @@
 
 <Slide
 	on:in={() => (animateProkerTitleSpawn = 'ANIMATE')}
-	on:out={() => (animateProkerTitleSpawn = 'REVERT')}
+	on:out={() => {
+		animateProkerTitleSpawn = 'REVERT'
+	}}
 	animate
 >
 	<Layout>
@@ -39,186 +41,136 @@
 
 <Slide
 	on:in={() => {
-		animateProkerTitleLine = 'ANIMATE'
 		animateWebinarKriptografi = 'ANIMATE'
 	}}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateProkerTitleLine}
-			delay={1000}
-			text="Program Kerja"
-			class="text-[2rem] font-bold tracking-wider"
-		/>
-		<Stack>
-			<Image src={WebinarKriptografi1} alt="Webinar Kriptografi" />
-		</Stack>
 		<TextLineSpawnEffect
 			animate={animateWebinarKriptografi}
 			class="text-6xl"
 			text="Webinar Kriptografi"
 		/>
+		<Stack>
+			<Image src={WebinarKriptografi1} alt="Webinar Kriptografi" />
+		</Stack>
 	</Layout>
 </Slide>
 
 <Slide
 	on:in={() => {
-		animateProkerTitleLine = 'ANIMATE'
 		animateWebinarKriptografi = 'ANIMATE'
 	}}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateProkerTitleLine}
-			delay={1000}
-			text="Program Kerja"
-			class="text-[2rem] font-bold tracking-wider"
+		<TextLineSpawnEffect
+			animate={animateWebinarKriptografi}
+			class="text-6xl"
+			text="Webinar Kriptografi"
 		/>
 		<Stack>
 			<Image src={WebinarKriptografi1} alt="Webinar Kriptografi" />
 			<Image src={WebinarKriptografi2} alt="Webinar Kriptografi" />
 		</Stack>
-		<TextLineSpawnEffect
-			animate={animateWebinarKriptografi}
-			class="text-6xl"
-			text="Webinar Kriptografi"
-		/>
 	</Layout>
 </Slide>
 
 <Slide
 	on:in={() => {
-		animateProkerTitleLine = 'ANIMATE'
 		animateWebinarKriptografi = 'ANIMATE'
 	}}
 	on:out={() => (animateWebinarKriptografi = 'REVERT')}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateProkerTitleLine}
-			delay={1000}
-			text="Program Kerja"
-			class="text-[2rem] font-bold tracking-wider"
+		<TextLineSpawnEffect
+			animate={animateWebinarKriptografi}
+			class="text-6xl"
+			text="Webinar Kriptografi"
 		/>
 		<Stack>
 			<Image src={WebinarKriptografi1} alt="Webinar Kriptografi" />
 			<Image src={WebinarKriptografi2} alt="Webinar Kriptografi" />
 			<Image src={WebinarKriptografi3} alt="Webinar Kriptografi" />
 		</Stack>
-		<TextLineSpawnEffect
-			animate={animateWebinarKriptografi}
-			class="text-6xl"
-			text="Webinar Kriptografi"
-		/>
 	</Layout>
 </Slide>
 
 <Slide
 	on:in={() => {
-		animateProkerTitleLine = 'ANIMATE'
 		animatePelatihanArduino = 'ANIMATE'
 	}}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateProkerTitleLine}
-			delay={1000}
-			text="Program Kerja"
-			class="text-[2rem] font-bold tracking-wider"
-		/>
-		<Stack>
-			<Image src={Arduino1} alt="Arduino 1" />
-		</Stack>
 		<TextLineSpawnEffect
 			animate={animatePelatihanArduino}
 			class="text-6xl"
 			text="Pelatihan Arduino"
 		/>
+		<Stack>
+			<Image src={Arduino1} alt="Arduino 1" />
+		</Stack>
 	</Layout>
 </Slide>
 
 <Slide
 	on:in={() => {
-		animateProkerTitleLine = 'ANIMATE'
 		animatePelatihanArduino = 'ANIMATE'
 	}}
 	on:out={() => (animatePelatihanArduino = 'REVERT')}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateProkerTitleLine}
-			delay={1000}
-			text="Program Kerja"
-			class="text-[2rem] font-bold tracking-wider"
-		/>
-		<Stack>
-			<Image src={Arduino1} alt="Arduino 1" />
-			<Image src={Arduino2} alt="Arduino 2" />
-		</Stack>
 		<TextLineSpawnEffect
 			animate={animatePelatihanArduino}
 			class="text-6xl"
 			text="Pelatihan Arduino"
 		/>
+		<Stack>
+			<Image src={Arduino1} alt="Arduino 1" />
+			<Image src={Arduino2} alt="Arduino 2" />
+		</Stack>
 	</Layout>
 </Slide>
 
 <Slide
 	on:in={() => {
-		animateProkerTitleLine = 'ANIMATE'
 		animatePelatihanMikrotik = 'ANIMATE'
 	}}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateProkerTitleLine}
-			delay={1000}
-			text="Program Kerja"
-			class="text-[2rem] font-bold tracking-wider"
-		/>
-		<Stack>
-			<Image src={PelatihanMikrotik1} alt="Pelatihan Mikrotik 1" />
-		</Stack>
 		<TextLineSpawnEffect
 			animate={animatePelatihanMikrotik}
 			class="text-6xl"
 			text="Pelatihan Set-up Mikrotik"
 		/>
+		<Stack>
+			<Image src={PelatihanMikrotik1} alt="Pelatihan Mikrotik 1" />
+		</Stack>
 	</Layout>
 </Slide>
 
 <Slide
 	on:in={() => {
-		animateProkerTitleLine = 'ANIMATE'
 		animatePelatihanMikrotik = 'ANIMATE'
 	}}
 	on:out={() => {
-		animateProkerTitleLine = 'REVERT'
 		animatePelatihanMikrotik = 'REVERT'
 	}}
 	animate
 >
 	<Layout>
-		<TextLineEffect
-			animate={animateProkerTitleLine}
-			delay={1000}
-			text="Program Kerja"
-			class="text-[2rem] font-bold tracking-wider"
-		/>
-		<Stack>
-			<Image src={PelatihanMikrotik1} alt="Pelatihan Mikrotik 1" />
-			<Image src={PelatihanMikrotik2} alt="Pelatihan Mikrotik 2" />
-		</Stack>
 		<TextLineSpawnEffect
 			animate={animatePelatihanMikrotik}
 			class="text-6xl"
 			text="Pelatihan Set-up Mikrotik"
 		/>
+		<Stack>
+			<Image src={PelatihanMikrotik1} alt="Pelatihan Mikrotik 1" />
+			<Image src={PelatihanMikrotik2} alt="Pelatihan Mikrotik 2" />
+		</Stack>
 	</Layout>
 </Slide>
