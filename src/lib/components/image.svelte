@@ -6,5 +6,5 @@
 <img
 	{src}
 	{alt}
-	class={($$props.class || '') + 'w-[92vw] h-[92vh] object-cover'}
+	class={($$props.class || '') + 'w-[960px] h-[500px] object-cover'}
 />
