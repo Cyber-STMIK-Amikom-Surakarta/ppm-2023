@@ -13,10 +13,8 @@
 
 	import TextPoppingEffect from '../components/TextPoppingEffect.svelte'
 	import TextLineSpawnEffect from '../components/TextLineSpawnEffect.svelte'
-	import TextLineEffect from '../components/TextLineEffect.svelte'
 
 	let animateKaryaTitle = 'NONE'
-	let animateKaryaTitleLine = 'NONE'
 	let animatePortfolioOnline = 'NONE'
 	let animateWebsiteECommerce = 'NONE'
 	let animateWebCyber = 'NONE'

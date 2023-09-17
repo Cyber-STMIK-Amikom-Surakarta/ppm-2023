@@ -13,10 +13,8 @@
 
 	import TextLineSpawnEffect from '../components/TextLineSpawnEffect.svelte'
 	import TextDropEffect from '../components/TextDropEffect.svelte'
-	import TextLineEffect from '../components/TextLineEffect.svelte'
 
 	let animateProkerTitleSpawn = 'NONE'
-	let animateProkerTitleLine = 'NONE'
 	let animateWebinarKriptografi = 'NONE'
 	let animatePelatihanArduino = 'NONE'
 	let animatePelatihanMikrotik = 'NONE'

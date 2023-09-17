@@ -9,7 +9,6 @@
 	import PertemuanRutin2 from '@assets/kegiatan/pertemuan-rutin-2.webp'
 	import TextPoppingEffect from '../components/TextPoppingEffect.svelte'
 	import TextLineSpawnEffect from '../components/TextLineSpawnEffect.svelte'
-	import TextLineEffect from '../components/TextLineEffect.svelte'
 
 	let animateBenefitTitle = 'NONE'
 	let animateBenefitTitleLine = 'NONE'
